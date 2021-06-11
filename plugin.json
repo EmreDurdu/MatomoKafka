@@ -1,0 +1,29 @@
+{
+    "name": "KafkaProducer",
+    "description": "This plugin is for pushing the data that collected from the matomo server to a Kafka queue",
+    "version": "0.1.0",
+    "theme": false,
+    "require": {
+        "matomo": ">=4.3.1-stable,<5.0.0-b1"
+    },
+    "authors": [
+        {
+            "name": "emredurdu",
+            "email": "muhammedemredurdu@gmail.com",
+            "homepage": "https://github.com/emredurdu"
+        }
+    ],
+    "support": {
+        "email": "",
+        "issues": "",
+        "forum": "",
+        "irc": "",
+        "wiki": "",
+        "source": "",
+        "docs": "",
+        "rss": ""
+    },
+    "homepage": "",
+    "license": "GPL v3+",
+    "keywords": []
+}
