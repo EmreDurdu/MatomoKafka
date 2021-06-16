@@ -6,26 +6,19 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\KafkaProducer;
+namespace Piwik\Plugins\MatomoKafka;
 
-use GeoIp2\Util;
 use Piwik\Container\StaticContainer;
-use Piwik\Piwik;
-use Piwik\Tracker;
-use Piwik\Tracker\RequestSet;
 use Psr\Log\LoggerInterface;
-use Piwik\Plugins\KafkaProducer\Utils;
 
-class KafkaProducer extends \Piwik\Plugin
+class MatomoKafka extends \Piwik\Plugin
 {
-    protected $pluginName = 'KafkaProducer';
+    protected string $pluginName = 'MatomoKafka';
     protected $logger = null;
-    protected $http = null;
 
     public function __construct($pluginName = false)
 
     {
-        Utils::console_log("deneme");
         $this->logger = StaticContainer::get(LoggerInterface::class);
         parent::__construct($pluginName);
     }

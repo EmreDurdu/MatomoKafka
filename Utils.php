@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Piwik\Plugins\KafkaProducer;
+namespace Piwik\Plugins\MatomoKafka;
 
 
 class Utils

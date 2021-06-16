@@ -1,6 +1,6 @@
 {
-    "name": "KafkaProducer",
-    "description": "This plugin is for pushing the data that collected from the matomo server to a Kafka queue",
+    "name": "MatomoKafka",
+    "description": "This plugin is for pushing the data that collected by the matomo server to a Kafka queue",
     "version": "0.1.0",
     "theme": false,
     "require": {
