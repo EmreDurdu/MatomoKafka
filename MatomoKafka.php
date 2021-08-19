@@ -17,7 +17,6 @@ class MatomoKafka extends \Piwik\Plugin
     protected $logger = null;
 
     public function __construct($pluginName = false)
-
     {
         $this->logger = StaticContainer::get(LoggerInterface::class);
         parent::__construct($pluginName);
