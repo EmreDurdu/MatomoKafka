@@ -29,7 +29,9 @@ class RequestHandler extends Handler
         $conf->set('log_level', (string)LOG_DEBUG);
         $conf->set('debug', 'all');
         $this->rk = new Producer($conf);
-        $this->rk->addBrokers("10.5.146.196:9092,10.5.146.197:9092");
+        $settings = new SystemSettings();
+        $this->rk->addBrokers($settings->brokerList->getValue());
+//        $this->rk->addBrokers("10.5.146.196:9092,10.5.146.197:9092");
         $this->topic = $this->rk->newTopic("test");
     }
 
